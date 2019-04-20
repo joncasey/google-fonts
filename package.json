@@ -1,0 +1,27 @@
+{
+  "name": "@joncasey/google-fonts",
+  "version": "0.0.1",
+  "description": "Download Google fonts for local/offline delivery",
+  "main": "lib/index.js",
+  "module": "lib/index.mjs",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w"
+  },
+  "devDependencies": {
+    "rollup": "^1.10.1"
+  },
+  "files": [
+    "lib/index.mjs"
+  ],
+  "author": "Jon Casey (https://github.com/joncasey)",
+  "license": "MIT",
+  "keywords": [
+    "download",
+    "font",
+    "google",
+    "webfont",
+    "woff",
+    "woff2"
+  ]
+}
