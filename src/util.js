@@ -7,11 +7,23 @@ const fontTypes = [
 
 const fontVariants = '12345678'.replace(/(\d)/g, '$100,$100i,')
 
+const fontWeightNames = {
+  100: 'Thin',
+  200: 'ExtraLight',
+  300: 'Light',
+  400: 'Regular',
+  500: 'Medium',
+  600: 'SemiBold',
+  700: 'Bold',
+  800: 'ExtraBold'
+}
+
 const isMaterialIcons = /^(Material )?Icons$/i
 
 export {
   baseURL,
   fontTypes,
   fontVariants,
+  fontWeightNames,
   isMaterialIcons
 }

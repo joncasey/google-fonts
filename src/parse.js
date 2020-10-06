@@ -1,3 +1,4 @@
+import { fontWeightNames } from './util'
 
 export function parseCSS (css) {
   const fontProps = ['family', 'weight', 'style']
@@ -65,6 +66,14 @@ export function parseFontFace (cssText) {
 
   if (!props.local && props.family === 'Material Icons') {
     props.local = 'MaterialIcons'
+  }
+
+  if (!props.local) {
+    props.local = (
+      props.family.replace(/ /g, '') + '-' +
+      (fontWeightNames[props.weight] || '') +
+      (props.style.startsWith('i') ? 'Italic' : '')
+    )
   }
 
   return props
