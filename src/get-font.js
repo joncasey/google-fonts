@@ -10,7 +10,9 @@ export default async (fontFamily, types = fontTypes) => {
 
   let family = fontFamily.trim().replace(/:$|:\|/g, `:${fontVariants}|`)
 
-  let path = `/css?family=${family}`
+  const isCss2Type = fontFamily.includes('wght@')
+
+  let path = `/${isCss2Type ? 'css2' : 'css'}?family=${family}`
   if (isMaterialIcons.test(family)) {
     path = `/icon?family=Material+Icons`
   }
