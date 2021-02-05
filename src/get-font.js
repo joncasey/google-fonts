@@ -1,5 +1,5 @@
 import { multiFetch } from './fetch'
-import { baseURL, fontTypes, fontVariants, isMaterialIcons } from './util'
+import { baseURL, fontTypes, fontVariants, isMaterialIcons, isVariableFonts } from './util'
 import { parseCSS } from './parse'
 import fontsToCSS from './fonts-to-css'
 
@@ -11,6 +11,11 @@ export default async (fontFamily, types = fontTypes) => {
   let family = fontFamily.trim().replace(/:$|:\|/g, `:${fontVariants}|`)
 
   let path = `/css?family=${family}`
+
+  if (isVariableFonts.test(family)) {
+    path = `/css2?family=${family}`
+  }
+
   if (isMaterialIcons.test(family)) {
     path = `/icon?family=Material+Icons`
   }

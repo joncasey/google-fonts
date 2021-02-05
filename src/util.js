@@ -20,10 +20,13 @@ const fontWeightNames = {
 
 const isMaterialIcons = /^(Material )?Icons$/i
 
+const isVariableFonts = /wght@/
+
 export {
   baseURL,
   fontTypes,
   fontVariants,
   fontWeightNames,
-  isMaterialIcons
+  isMaterialIcons,
+  isVariableFonts
 }
