@@ -2,8 +2,8 @@
   "name": "@joncasey/google-fonts",
   "version": "0.4.0",
   "description": "Download Google fonts for local/offline delivery",
-  "main": "lib/index.js",
-  "module": "lib/index.mjs",
+  "main": "dist/google-fonts.js",
+  "module": "dist/google-fonts.mjs",
   "scripts": {
     "build": "rollup -c",
     "watch": "rollup -c -w"
@@ -12,7 +12,7 @@
     "rollup": "^2.28.2"
   },
   "files": [
-    "lib/index.mjs"
+    "dist/google-fonts.mjs"
   ],
   "author": "Jon Casey (https://github.com/joncasey)",
   "license": "MIT",
