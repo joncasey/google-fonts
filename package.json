@@ -1,6 +1,6 @@
 {
   "name": "@joncasey/google-fonts",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Download Google fonts for local/offline delivery",
   "main": "dist/google-fonts.js",
   "module": "dist/google-fonts.mjs",
