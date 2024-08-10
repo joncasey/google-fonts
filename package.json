@@ -9,7 +9,7 @@
     "watch": "rollup -c -w"
   },
   "devDependencies": {
-    "rollup": "^3.7.4"
+    "rollup": "^3.29.4"
   },
   "files": [
     "dist/google-fonts.mjs"
